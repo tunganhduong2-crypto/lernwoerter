@@ -37,7 +37,8 @@ header h1 {
     background-color: transparent; 
     border: 2px solid; 
     color: white; 
-    font-size: 1.1em; 
+    /* **Änderung:** Doppelte Schriftgröße (vorher 1.1em * 2 = 2.2em) */
+    font-size: 2.2em; 
     padding: 8px 12px;
     cursor: pointer;
     font-weight: bold;
@@ -64,12 +65,10 @@ main {
 }
 
 /* Styling für den Text selbst (etwas größer) */
-/* **Änderung:** Verwende die neue Klasse für den Text-Inhalt */
 .group-text-content { 
-    font-size: 1.4em; /* Schriftgröße etwas größer */
+    font-size: 1.4em; 
     line-height: 1.6;
-    /* Damit die <br>s funktionieren, ist kein padding/margin nötig, aber wir stellen sicher, dass der Textumbrüche respektiert */
-    white-space: pre-wrap; /* Wichtig, falls man doch pre-Tags nutzen möchte, aber mit <br>s weniger relevant */
+    white-space: pre-wrap; 
 }
 
 
@@ -98,7 +97,8 @@ main {
 }
 
 .word-table td {
-    font-size: 1.6em;
+    /* **Änderung:** Doppelte Schriftgröße (vorher 1.6em * 2 = 3.2em) */
+    font-size: 3.2em;
     padding: 8px 5px;
     cursor: pointer;
     border-bottom: 1px solid #ddd;
@@ -143,11 +143,14 @@ main {
     color: #34495e;
     margin-top: 10px;
     display: block;
+    /* **Anpassung für die Labels:** Verwenden wir die Basis-Wort-Detail-Größe für Konsistenz */
+    font-size: 3.9em; /* Basis 1.3em * 3 = 3.9em */
 }
 
-/* **NEU:** Klasse für die Wort-Detailtexte (Beispiel, Infos) */
+/* Klasse für die Wort-Detailtexte (Beispiel, Infos) */
 .word-detail-text {
-    font-size: 1.3em; /* **Anpassung:** Größere Schrift */
-    line-height: 1.5; /* Verbessert die Lesbarkeit */
+    /* **Änderung:** Dreifache Schriftgröße (vorher 1.3em * 3 = 3.9em) */
+    font-size: 3.9em; 
+    line-height: 1.5; 
     margin-bottom: 15px;
 }
