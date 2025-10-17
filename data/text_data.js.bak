@@ -1,0 +1,30 @@
+// Simuliert die Struktur der text.yml
+const TEXT_DATA = [
+    {
+        Gruppen: "1_bis_3",
+        Text: `Ein Tag am See\n
+An einem warmen Sommertag fuhren unser Freund Tim und seine Familie an den See. Es war offen und ruhig dort. Nur das Wasser glitzerte in der Wärme der Sonne.\n
+Tim wollte sofort schwimmen, aber seine Mutter sagte:
+„Du musst erst warten, bis das Schwimmbad geöffnet ist. Hier darfst du nicht einfach ins Wasser!“
+Also ging Tim ans Ufer. Dort krabbelte ein Käfer über das Gras. „Wie lustig er aussieht!“, lachte Tim.
+Neben ihm lag ein altes Schloss aus Sand, das Kinder gebaut hatten. Daneben fand er eine Flosse und dachte: „Vielleicht wohnt hier ein Fisch!“
+Sein Vater kletterte gerade auf den Berg hinter dem See, um ein Foto zu machen. „Pass auf!“, rief Tim.
+Später setzten sie sich auf das Feld am Rand des Sees und machten ein Picknick. Es gab Pizza, Tee und ein bisschen Zucker für den Nachtisch.
+Tim sammelte kleine Steine, die in der Sonne glänzten. Dann hörte man den Wecker klingeln – das Zeichen, dass sie nach Hause fahren mussten.
+Auf der Fahrt erzählte Tims Vater einen Witz, und alle lachten. Zuhause angekommen, öffnete Tim das Fenster. Es war still – nur die Ruhe der Nacht blieb.
+Tim schrieb noch schnell ein Gedicht über den Tag:
+„Am See war’s schön, so wunderbar,
+weil alles ruhig und sonnig war.“
+Dann legte er sich ins Bett. Sein letztes Wort war: „Alles war schön – nur meine Füße sind noch schmutzig!“
+`
+    },
+    {
+        Gruppen: "4_bis_6",
+        Text: "Hier steht der Text für die Gruppen 4 bis 6."
+    },
+    // Fügen Sie hier Einträge für alle 10 Gruppen hinzu, z.B. "25_bis_28"
+    {
+        Gruppen: "25_bis_28",
+        Text: "Abschließender Text für die Gruppen 25 bis 28."
+    }
+];
