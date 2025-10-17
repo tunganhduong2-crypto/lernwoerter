@@ -1,0 +1,153 @@
+/* ALLGEMEINES LAYOUT */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    --current-border-color: #ccc; /* Standard-Randfarbe */
+}
+
+/* Hilfsklasse zum Ein-/Ausblenden */
+.hidden {
+    display: none !important;
+}
+
+/* ÜBERSCHRIFT (Hauptüberschrift beibehalten) */
+header h1 {
+    font-size: 3em; 
+    color: #2c3e50;
+    margin-bottom: 0;
+}
+
+/* BUTTON-BEREICH */
+#button-area {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.button-group {
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.button-group button {
+    background-color: transparent; 
+    border: 2px solid; 
+    color: white; 
+    font-size: 1.1em; 
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5px; 
+    border-radius: 4px;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.button-group button:hover {
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* HAUPTINHALT */
+main {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px; 
+}
+
+/* NEU: Text-Anzeigebereich soll die gesamte Breite einnehmen */
+#text-display-area {
+    width: 100%; /* Nimmt die gesamte Breite der Main-Sektion ein */
+}
+
+/* Styling für den Text selbst (etwas größer) */
+/* **Änderung:** Verwende die neue Klasse für den Text-Inhalt */
+.group-text-content { 
+    font-size: 1.4em; /* Schriftgröße etwas größer */
+    line-height: 1.6;
+    /* Damit die <br>s funktionieren, ist kein padding/margin nötig, aber wir stellen sicher, dass der Textumbrüche respektiert */
+    white-space: pre-wrap; /* Wichtig, falls man doch pre-Tags nutzen möchte, aber mit <br>s weniger relevant */
+}
+
+
+/* GEMEINSAMER RAHMEN */
+.bordered-area {
+    border: 2px solid var(--current-border-color); 
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    transition: border-color 0.3s; 
+}
+
+/* WÖRTERLISTE BEREICH */
+#wordlist-area {
+    flex: 1; 
+    min-width: 250px;
+}
+
+#wordlist-area h2 {
+    display: none;
+}
+
+.word-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.word-table td {
+    font-size: 1.6em;
+    padding: 8px 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.1s;
+}
+
+.word-table td:hover {
+    background-color: #f0f0f0;
+}
+
+.word-table .selected {
+    background-color: #f1c40f; 
+    font-weight: bold;
+}
+
+/* WORT-INFOS BEREICH */
+#info-area {
+    flex: 2; 
+    min-width: 350px;
+}
+
+#info-area h2 {
+    display: none;
+}
+
+#word-details h3 {
+    display: none;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+#word-details img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #aaa;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 10px;
+    display: block;
+}
+
+/* **NEU:** Klasse für die Wort-Detailtexte (Beispiel, Infos) */
+.word-detail-text {
+    font-size: 1.3em; /* **Anpassung:** Größere Schrift */
+    line-height: 1.5; /* Verbessert die Lesbarkeit */
+    margin-bottom: 15px;
+}
